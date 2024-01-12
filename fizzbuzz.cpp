@@ -1,10 +1,19 @@
 #include <iostream>
 
-int main() {
-    int x;
+int set_iterations();
 
+int main() {
+    int x = set_iterations();
+    /*
     std::cout << "Enter a number: ";
-    std::cin >> x;
+    std::cin >> x;*/
+
+    ;
+
+    if (x > 10000) {
+        std::cout << "Your CPU and time would rather you entered a number lower than 10 000...";
+        return 1;
+    }
 
     for (int i = 1; i < (x+1); i++) {
         if (!(i % 3) && !(i % 5)) {
@@ -24,4 +33,13 @@ int main() {
     std::cin >> exit;
 
     return 0;
+}
+
+int set_iterations() {
+    int x;
+
+    std::cout << "Enter a number: ";
+    std::cin >> x;
+
+    return x;
 }
