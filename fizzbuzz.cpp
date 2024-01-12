@@ -17,6 +17,7 @@ int main() {
             std::cout << i << "\n";
         }
     }
+    std::cout << "\n---END---\n";
 
     char exit;
     std::cout << "Input any character to exit: ";
