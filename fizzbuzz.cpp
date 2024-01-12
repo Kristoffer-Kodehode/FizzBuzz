@@ -30,7 +30,7 @@ int main() {
 
     char exit;
     std::cout << "Input any character to exit: ";
-    std::cin >> exit;
+    std::cin >> exit;//probably leaves garbage in memory, should fix when i learn more
 
     return 0;
 }
